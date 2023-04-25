@@ -1,0 +1,118 @@
+<HTML>
+
+    <HEAD>
+        <style>
+            body{
+                font-weight:bold;
+                font-size: 16px;
+                margin-left: 30;
+                background-color: rgb(62, 96, 62);
+                color: rgb(255, 255, 255);
+            }
+        input.B1{
+            color: aliceblue;
+            background:blue;
+            font-weight:bold;
+            font-size: 16px;
+            border:1px solid#d92e2e;
+            ;
+        }
+        input{
+            font-size: 16px;
+            font-weight:bold;
+            background-color: black;
+            color: aliceblue;
+            border:1px solid;
+        }
+    </style>
+        
+        <TITLE> FORM IN HTML : </TITLE>
+    
+    </HEAD> 
+    
+    <BODY >
+<b>
+    <H1> KINDLY FILL THE INFORMATION IN THE FORM GIVEN BELOW. </H1>
+    <FONT SIZE = 10 FACE = "ARIAL">
+    
+    <FORM NAME = "applyform"  action="/redirect/{{las.APP_ID}}" method="POST"  novalidate>
+     <table>
+        <tr>
+            <td>ENTER YOUR FULL NAME: </td>
+            <td><INPUT TYPE = "TEXT" SIZE ="40" VALUE =" "name="Name"></td>
+        </tr>
+        <tr>
+            <td>ENTER PASSWORD :</td>
+            <td><INPUT TYPE = "PASSWORD" SIZE ="40" MAXLENGTH = 10 name="Password"></td>
+        </tr>
+        <tr>
+            <td>ENTER E-MAIL :</td>
+            <td><INPUT TYPE = "email" SIZE ="40" VALUE =" " name="Email"></td>
+        </tr>
+        <tr>
+            <td>ENTER PHONE :</td>
+            <td><INPUT TYPE = "number" SIZE ="13" VALUE ="" name="Phone"></td>
+        </tr>
+        <tr>
+            <td>GENDER</td>
+            <td>
+                <input type="radio" id="male" name="GENDER" value="M">
+                <label for="male">MALE</label><br>
+                <input type="radio" id="female" name="GENDER" value="F">
+                <label for="female">FEMALE</label><br>
+                <input type="radio" id="transgender" name="GENDER" value="T">
+                <label for="transgender">TRANSGENDER</label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>DATE OF BIRTH :</td>
+            <td><INPUT TYPE = "date" name="Dob"></td>
+        </tr>
+        <tr>
+            <td><label>LANGUAGES KNOWN :</label></td>
+            <td>
+        <INPUT TYPE = "CHECKBOX" NAME = "Lang1" VALUE = "ENG"> ENGLISH <BR>
+        <INPUT TYPE = "CHECKBOX" NAME = "Lang2" VALUE ="BEN"> BENGALI <BR>
+        <INPUT TYPE = "CHECKBOX" NAME = "Lang3" VALUE = "HIN"> HINDI <BR>
+        <INPUT TYPE = "CHECKBOX" NAME = "Lang4" VALUE = "FRE"> FRENCH <BR> </td>
+        </tr>
+
+        <tr>
+            <td>ADDRESS</td>
+            <td>
+                <INPUT TYPE = "text" size="50" name="Address">
+            </td> 
+        </tr>
+    
+        <tr>
+            <td>HOBBIES :</td>
+            <td><INPUT TYPE = "TEXT" SIZE ="40" VALUE =" " name="Hobbies" > </td>
+        </tr>
+        <tr>
+            <td>GUARDIAN NAME :</td>
+            <td> <INPUT TYPE = "TEXT" SIZE ="40" VALUE =" " name="GName"></td>
+        </tr>
+        <tr>
+            <td>12 MARKSHEET :</td>
+            <td><input type="file" name="12markssheet" id="12markssheet" SIZE ="40"></td>
+        </tr>
+     </table>
+    
+     <INPUT TYPE = "SUBMIT" VALUE ="CLICK TO REGISTER" class="B1" >
+          <INPUT TYPE = "RESET" VALUE = "RESET THIS FORM!" style="background-color: #d92e2e;"> <BR> <BR>
+    
+    
+    </FORM>
+</b>
+<script >
+    function redirect() {
+        let temp="/redirect/";
+        temp+="{{las.APP_ID}}";
+        window.location =temp;
+    }
+</script>
+    </BODY>
+    
+    </HTML>
+    

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Home Page</title>
+	<style>
+    .header {
+        background-color: grey;
+        font-family: forte ;
+		font-size:400%;
+		
+    }
+	.headuni{
+		width: fit-content;
+		background-image: url(static/image/unii.jpeg) ;
+		background-size: 100% 100%;
+
+	}
+    
+    .middle {
+    	background-color: rgb(253, 213, 153);
+    }
+    
+    .bottom {
+    	background-color: rgb(191, 166, 166);
+    
+
+    }
+
+    .footer {
+    	background-color: black;
+    	color: white;
+    	font-size: 40;
+
+
+
+    }
+	.tab1{
+		border:5px solid rgb(179, 182, 244);
+		border-style: double;
+		padding:5px;
+		border-collapse:separate;
+		background-color: rgb(255, 255, 255);
+
+	}
+	/* Styling the area of the slides */
+     
+    #slideshow {
+        overflow: hidden;
+        height: 510px;
+        width: 728px;
+        margin: 0 auto;
+    }
+     
+    /* Style each of the sides
+    with a fixed width and height */
+     
+    .slide {
+        float: left;
+        height: 510px;
+        width: 728px;
+    }
+     
+    /* Add animation to the slides */
+     
+    .slide-wrapper {
+         
+        /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(728px * 7);
+         
+        /* Specify the animation with the
+      duration and speed */
+        animation: slide 10s ease infinite;
+    }
+     
+     
+    /* Define the animation
+    for the slideshow */
+     
+    @keyframes slide {
+         
+        /* Calculate the margin-left for
+      each of the slides */
+        12% {
+            margin-left: 0px;
+        }
+        24% {
+            margin-left: calc(-728px * 1);
+        }
+        36% {
+            margin-left: calc(-728px * 2);
+        }
+        48%	{
+            margin-left: calc(-728px * 3);
+        }
+		60% {
+            margin-left: calc(-728px * 4);
+        }
+		72% {
+            margin-left: calc(-728px * 5);
+        }
+		84% {
+            margin-left: calc(-728px * 6);
+        }
+		96% {
+            margin-left: calc(-728px * 7);
+        }
+    }
+
+
+</style>
+</head>
+<body>
+
+	<div class="header" >
+		<table width="100%"  cellspacing="0" cellpadding="0" style="">
+			<tr>
+				<td> <center><img src=" {{ url_for('static', filename='image/uni.png')}}" alt="University image"></center>	</td>
+				<td class ="headuni" ><marquee direction="right" onmouseover="this.stop()" onmouseout="this.start()" >UNIVERSITY , West Bengal</marquee></p></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="middle">
+		<center><h2>COURSES</h2></center>
+		<div id="slideshow">	
+		 <div class="slide-wrapper">
+             
+            <!-- Define each of the slides
+         and write the content -->
+            <div class="slide">
+                <img src="{{ url_for('static', filename='image/course.png')}}" alt="Courses offered" height="510" width="728" >
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static', filename='image/cse.jpeg')}}" alt="cse" height="510" width="728">
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static', filename='image/ece.jpg')}}" alt="ece"height="510" width="728">
+            </div>
+            <div class="slide">
+				<img src="{{ url_for('static', filename='image/ce.jpeg')}}" alt="ce"height="510" width="728">
+            </div>
+			<div class="slide">
+				<img src="{{ url_for('static', filename='image/che.jpg')}}" alt="che"height="510" width="728">
+            </div>
+			<div class="slide">
+				<img src="{{ url_for('static', filename='image/ee.jpg')}}" alt="ee"height="510" width="728">
+            </div>
+			<div class="slide">
+				<img src="{{ url_for('static', filename='image/me.jpeg')}}" alt="me"height="510" width="728">
+          </div>
+         </div>
+
+
+	</div >
+<center>
+	<div class="bottom" >
+		<table class="tab1"  >
+			<tr style="border-radius: 20%;">
+				<td><a href="apply"><img src="{{ url_for('static', filename='image/apply.png')}}" alt="apply" > </a> </td>
+				<td><a href="govtrecog"><img src="{{ url_for('static', filename='image/gov.png')}}" alt="Gov" ></a> </td>
+				<td><a href="Scholarship"> <img src="{{ url_for('static', filename='image/scholar.png')}}" alt="scholar" > </a></td>
+
+			</tr>
+			<tr>
+				<td><a href="wbjee"><img src="{{ url_for('static', filename='image/wbjee.png')}}" alt="wbjee" > </a></td>
+				<td><a href="jee"><img src="{{ url_for('static', filename='image/jee.png')}}" alt="jee" > </a></td>
+				<td> <a href="antiragging"> <img src="{{ url_for('static', filename='image/ragging.png')}}" alt="ragging" > </a></td>
+
+			</tr>
+		</table>
+	</center>
+		<h2>University, West Bengal Today</h2>
+		<p>
+			Our student friendly campus, multicultural and cosmopolitan ambiences, top- class education with a human touch, brilliant academic and industry exposure has made  University, West Bengal one of the most preferred educational destinations in modern times. University, West Bengal has been making every effort to make its academics and teaching-learning live up to international standards with its world-class infrastructure, excellent academic ambience and vibrant campus.
+		</p>	
+		<h2>From our Chairman </h2>
+		<p>Standing tall as the first AICTE approved and UGC accredited private university 
+			in West Bengal,  University has been established as an institute of 
+			worldwide repute in the field of technology, education and research. 
+			<br>
+			It is renowned for the international quality of faculty and the outstanding calibre of its students. It also enjoys one of the best faculty-student ratios in the country with faculty strength of over 600. The institute provides an ambience where creativity and new ideas flourish,
+			 producing leaders of tomorrow by imparting learning blended with excellence.</p>
+		<table>
+			<tr>
+				<td>
+
+				</td>
+				<td>
+
+				</td>
+			</tr>
+		</table>
+	</div>
+		
+	<div class="footer">
+		<center>
+		<table>
+			
+			<tr>
+				<td>
+					Unversity,West Bengal<br>
+					Contact us:
+					<p>Phone No--+91-7538691584/85/86</p>
+					<p>Email--contactus@university.org</p>
+					<p>Address--95/25B C T Road,<br>
+					&emsp;&emsp;&emsp;&emsp;Kolika-911121</p>
+
+				</td>
+				<td>
+					Companies Palced<br>
+					<img src="{{ url_for('static', filename='image/company.jpeg')}}" alt="Company placed" width="200" height="200">
+
+				</td>
+				<td width="300">
+					NOTICE<br>
+					<marquee width="50%" direction="up" height="200px">
+
+					Upcoming IEEE International Conference ICCECE 2020 will be held on the 17th & 18th of January, 2020. AICTE is another sponsor of this conference. IEEE conference ID: #48148. Tutorial sessions for the Undergraduate students will be held on the 16th of January. Details are available on our official website: www.iccece.com<br><br>
+
+ 					International Journal of Techno India University, West Bengal TIU Transaction on Intelligent Computing (TTIC) has been approved by the Government and attributed the RNI registration no WBENG/2017/77591 Journals are open for the submission of papers for Vol.3
+ 					<marquee>
+				</td>
+			</tr>
+		</table>
+		</center>
+
+	</div>
+	
+	
+
+
+</body>
+</html>
