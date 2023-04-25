@@ -1,5 +1,4 @@
-<pre>
-<code>
+
 
 from flask import Flask, render_template , request
 from flask_sqlalchemy import SQLAlchemy
@@ -102,5 +101,5 @@ def Scholarship():
 
 
 app.run(debug=True)
-</code>
-</pre>
+
+
