@@ -1,0 +1,11 @@
+{
+    "params": {
+        "local_server": "True",
+        "local_uri":"mysql://root:@localhost/application",
+        "prod_uri":"mysql://root:@localhost/application",
+        "git_url":"https://github.com/Rohan-Mondal9/First-website",
+        "student_applied":"",
+        "gmail-user":"1231rohanmondal@gmail.com",
+        "gmail-password":"qwsy%&45"
+    }
+}
